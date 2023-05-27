@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatingDataActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/toolbar"
+        android:id="@+id/profile_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/add_notes_title"
+                android:layout_below="@id/profile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Package User "
+                android:inputType="text"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textAlignment="viewStart"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_toolbar" />
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/add_notes_title2"
+                android:layout_below="@id/profile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Total Amount"
+                android:inputType="number"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textAlignment="viewStart"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_toolbar" />
+            <EditText
+                android:textColor="#000"
+                android:id="@+id/add_notes_ti6tle"
+                android:layout_below="@id/profile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Daily Bonus"
+                android:inputType="number"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textAlignment="viewStart"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_toolbar" />
+
+            <EditText
+
+                android:textColor="#000"
+                android:id="@+id/add_notes_ti6tle11"
+                android:layout_below="@id/profile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:visibility="gone"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter Refer Rate"
+                android:inputType="number"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textAlignment="viewStart"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_toolbar" />
+            <EditText
+                android:textColor="#000"
+                android:enabled="false"
+                android:visibility="gone"
+                android:text="Admin give it 5 min before game start."
+                android:id="@+id/add_notes_ti6tle1"
+                android:layout_below="@id/profile_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:background="@android:color/transparent"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Enter room id"
+                android:inputType="textMultiLine"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:textAlignment="viewStart"
+                android:textSize="12dp"
+                android:textStyle="bold"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_toolbar" />
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:hint="Enter day"
+                        android:textSize="12dp"
+                        android:text="1"
+                        android:inputType="datetime"
+                        android:id="@+id/makerules"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        ></EditText>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <EditText
+                        android:inputType="datetime"
+                        android:text="1"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Enter month"
+                        android:id="@+id/bloas"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@android:color/transparent"
+                        ></EditText>
+                </LinearLayout>
+                //
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <EditText
+                        android:inputType="datetime"
+                        android:text="2075"
+                        android:textSize="12dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Enter year"
+                        android:id="@+id/bloas1"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@android:color/transparent"
+                        ></EditText>
+                </LinearLayout>
+            </LinearLayout>
+            //
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <EditText
+                        android:background="@android:color/transparent"
+                        android:hint="Enter Hour"
+                        android:textSize="12dp"
+                        android:text="1"
+                        android:inputType="datetime"
+                        android:id="@+id/makerule1s"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+
+                        ></EditText>
+                </LinearLayout>
+                <LinearLayout
+
+                    android:layout_width="0dp"
+
+
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                    <EditText
+                        android:inputType="datetime"
+                        android:textSize="12dp"
+                        android:text="0"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Enter minutes"
+                        android:id="@+id/bloas1ss"
+                        android:textColor="@color/black"
+                        android:textAllCaps="false"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@android:color/transparent"
+                        ></EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+            <Button
+                android:visibility="gone"
+                android:layout_margin="30dp"
+                android:layout_width="match_parent"
+                android:text="Add"
+                android:textColor="@color/white"
+                android:textAllCaps="true"
+                android:id="@+id/submit"
+                android:background="@color/toolbar"
+                android:layout_height="@dimen/space_50dp"
+                ></Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

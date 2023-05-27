@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_Videos">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/space_10dp"
+            android:layout_height="275dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.002" />
+
+        <Button
+            android:id="@+id/upload"
+            android:layout_width="265dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/_150sdp"
+            android:text="Upload Video"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/browse" />
+        //
+
+        <Button
+            android:id="@+id/browse"
+            android:layout_width="265dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginBottom="39dp"
+            android:text="Browse Video"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/upload"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vtitle" />
+
+        <EditText
+            android:id="@+id/vtitle"
+            android:layout_width="263dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="64dp"
+            android:ems="10"
+            android:hint="Enter Video Title"
+            android:inputType="textPersonName"
+            android:textColor="#000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/browse"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoView"
+            app:layout_constraintVertical_bias="0.338" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

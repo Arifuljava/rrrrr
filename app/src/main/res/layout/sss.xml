@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="290dp"
+    android:id="@+id/card"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.denzcoskun.imageslider.ImageSlider
+            android:id="@+id/slider"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            app:iss_auto_cycle="true"
+            android:layout_margin="5dp"
+            app:iss_placeholder="@drawable/loading"
+            app:iss_error_image="@drawable/error"
+            app:iss_delay="0"
+            app:iss_period="4000" />
+
+        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:visibility="visible"
+            android:id="@+id/exoplayerview"
+            android:layout_margin="3dp"
+            app:use_controller="true"
+            app:resize_mode="fill"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Video Title"
+            android:textColor="#000"
+            android:id="@+id/vtitle"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

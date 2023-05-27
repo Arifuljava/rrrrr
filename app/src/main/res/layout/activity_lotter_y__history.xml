@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/main_background"
+
+    tools:context=".LotterY_History"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+
+        android:layout_below="@id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_below="@id/main_constraint"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/space_10dp"
+                        android:layout_marginRight="@dimen/space_10dp"
+                        android:background="@drawable/main_background"
+                        android:text="  Lottry History"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+
+
+                        ></TextView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="60dp"
+                        android:layout_marginRight="@dimen/space_10dp"
+                        android:layout_marginLeft="@dimen/space_10dp"
+
+
+                        android:layout_width="match_parent"
+                        android:id="@+id/rreeeed"
+                        android:layout_marginBottom="50dp"
+                        android:layout_height="wrap_content"
+                        ></androidx.recyclerview.widget.RecyclerView>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_marginTop="60dp"
+                        android:layout_marginRight="@dimen/space_10dp"
+                        android:layout_marginLeft="@dimen/space_10dp"
+                        android:layout_marginBottom="50dp"
+                        android:id="@+id/empty_cart"
+                        android:layout_width="match_parent"
+                        app:lottie_fileName="empty_list.json"
+                        android:layout_height="300dp"
+                        android:foregroundGravity="center"
+                        android:src="@drawable/cartempty"
+                        android:visibility="invisible"
+                        app:lottie_loop="true"
+                        app:lottie_autoPlay="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

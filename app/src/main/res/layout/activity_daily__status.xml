@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daily_Status">
+    <RelativeLayout
+
+        android:id="@+id/main_constraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/white"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+    <ScrollView
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/space_50dp"
+            >
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="@dimen/space_20dp"
+                android:hint="Enter Name"
+                android:text="Daily Refer "
+                android:id="@+id/detailsbasic"
+                android:textAlignment="viewStart"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_height="@dimen/space_50dp"
+                ></TextView>
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="@dimen/space_20dp"
+                android:hint="Enter Name"
+                android:text="Free Refer "
+                android:id="@+id/dde"
+                android:textAlignment="viewStart"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_height="@dimen/space_50dp"
+                ></TextView>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/space_20dp"
+                android:background="@drawable/border"
+                android:layout_marginTop="@dimen/space_20dp"
+                android:hint="Enter Name"
+                android:text="Free Refer "
+                android:id="@+id/dde1"
+                android:textAlignment="viewStart"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:layout_marginBottom="0dp"
+                android:layout_height="@dimen/space_50dp"
+                ></TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
